@@ -1,3 +1,86 @@
-h1{
-    color:red
+
+.resume{
+    background-repeat: no-repeat;
+    background-image: url("../images/resume.png");
+    background-position: center;
+    min-height: 2200px;
+    margin-bottom: 30px;
+}
+
+
+
+/*
+Hamburger Menu
+*/
+
+a{
+    text-decoration: none;
+}
+
+.drop-down{
+    color: #ffffff;
+}
+
+.drop-down:active{
+    color: #000000;
+}
+
+.menu-button{
+    background: #000;
+    width: 50px;
+    border-radius: 5px;
+    position: fixed;
+    cursor: pointer;
+    transition: all linear .3s;
+    padding: 4px;
+    z-index: 1;
+  }
+  
+.menu-button.change{
+    background: #3d3d3d;
+    }
+
+.line-1,.line-2,.line-3{
+    width: 90%;
+    background: #fff;
+    height: 8px;
+    margin: 4px auto;
+    border-radius: 2px;
+    transition: all linear .3s;
+}
+
+.change .line-1{
+    -webkit-transform: translate(0px,12px) rotate(45deg);
+    transform: translate(0px,12px) rotate(45deg);
+}
+
+.change .line-2{
+    opacity: 0;
+}
+
+.change .line-3{
+    -webkit-transform: translate(0px, -12px) rotate(-45deg);
+    transform: translate(0px, -12px) rotate(-45deg);
+}
+
+.menu{
+    background: #3d3d3d;
+    width: 150px;
+    padding: 10px;
+    padding-top: 30px;
+    color: #fff;
+    font-family: arial;
+    font-size: 1.5rem;
+    display: none;
+    position: fixed;
+    top: 8px;
+    border-radius: 5px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    margin: 8px 0;
 }
